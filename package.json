@@ -51,7 +51,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "eslint ."
+    "*.js": ["./node_modules/.bin/eslint ."]
   },
   "jest": {
     "preset": "react-native"
