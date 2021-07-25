@@ -2,7 +2,7 @@ import { Appbar } from 'react-native-paper'
 import PropTypes from 'prop-types'
 import React from 'react';
 
-import globalStyles from '../../styles/globalStyles'
+import globalStyles from '../../styles/globalStyles';
 
 const HeaderBar = ({ title }) => (
   <Appbar.Header style={globalStyles.headerContainer}>
