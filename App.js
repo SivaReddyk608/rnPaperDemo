@@ -6,21 +6,19 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React from 'react'
 import {
   SafeAreaView,
   StatusBar
-} from 'react-native';
+} from 'react-native'
 
 import AppContainer from './src/components/elements/AppContainer'
 
-const App = () => {
-  return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle={'dark-content'} />
-      <AppContainer />
-    </SafeAreaView>
-  );
-};
+const App = () => (
+  <SafeAreaView style={{ flex: 1 }}>
+    <StatusBar barStyle="dark-content" />
+    <AppContainer />
+  </SafeAreaView>
+)
 
-export default App;
+export default App
