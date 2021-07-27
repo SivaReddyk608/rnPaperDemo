@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* rnPaperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnPaperDemoTests.m */; };
+		056AB59126AF1C8800B76E62 /* Bridge_Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056AB59026AF1C8800B76E62 /* Bridge_Header.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -30,6 +31,8 @@
 		00E356EE1AD99517003FC87E /* rnPaperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnPaperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rnPaperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnPaperDemoTests.m; sourceTree = "<group>"; };
+		056AB58F26AF1C8800B76E62 /* rnPaperDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rnPaperDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		056AB59026AF1C8800B76E62 /* Bridge_Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge_Header.swift; sourceTree = "<group>"; };
 		0815C862E0AC58C2DA0DBB2B /* Pods-rnPaperDemo-rnPaperDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnPaperDemo-rnPaperDemoTests.release.xcconfig"; path = "Target Support Files/Pods-rnPaperDemo-rnPaperDemoTests/Pods-rnPaperDemo-rnPaperDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		1136CD411448B9B8205DE0C5 /* Pods-rnPaperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnPaperDemo.release.xcconfig"; path = "Target Support Files/Pods-rnPaperDemo/Pods-rnPaperDemo.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* rnPaperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnPaperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +126,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				056AB59026AF1C8800B76E62 /* Bridge_Header.swift */,
 				13B07FAE1A68108700A75B9A /* rnPaperDemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rnPaperDemoTests */,
@@ -130,6 +134,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				AEC3E5B3DCBFB49B90C64CF3 /* Pods */,
 				06AF451562C740A58C1C4FFF /* Resources */,
+				056AB58F26AF1C8800B76E62 /* rnPaperDemo-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				A10D4A321DBBCA57B47C03E5 /* [CP] Copy Pods Resources */,
+				02576A94E3379B7F99405738 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +196,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				7053B45260B2415FB29CAEB1 /* [CP] Copy Pods Resources */,
+				B09C1FF3C58129ED497743A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,7 +220,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -269,6 +276,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		02576A94E3379B7F99405738 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo-rnPaperDemoTests/Pods-rnPaperDemo-rnPaperDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo-rnPaperDemoTests/Pods-rnPaperDemo-rnPaperDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo-rnPaperDemoTests/Pods-rnPaperDemo-rnPaperDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		1515BAC405D97562A833AAC6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -348,6 +372,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo-rnPaperDemoTests/Pods-rnPaperDemo-rnPaperDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B09C1FF3C58129ED497743A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo/Pods-rnPaperDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo/Pods-rnPaperDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnPaperDemo/Pods-rnPaperDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +425,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				056AB59126AF1C8800B76E62 /* Bridge_Header.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3B9E59E381D7B89F2C1F244 /* Pods-rnPaperDemo-rnPaperDemoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -429,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0815C862E0AC58C2DA0DBB2B /* Pods-rnPaperDemo-rnPaperDemoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rnPaperDemoTests/Info.plist;
@@ -468,8 +512,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scandit.BarcodeCaptureSimpleSample.AOS.LSCO;
 				PRODUCT_NAME = rnPaperDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "rnPaperDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,8 +540,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scandit.BarcodeCaptureSimpleSample.AOS.LSCO;
 				PRODUCT_NAME = rnPaperDemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "rnPaperDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
