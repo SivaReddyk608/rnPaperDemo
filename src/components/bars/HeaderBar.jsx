@@ -4,8 +4,11 @@ import React from 'react'
 
 import globalStyles from '../../styles/globalStyles'
 
-const HeaderBar = ({ title }) => (
+const HeaderBar = ({ title, onPressBack }) => (
   <Appbar.Header style={globalStyles.headerContainer}>
+    {Boolean(onPressBack) && (
+      <Appbar.Action icon="keyboard-backspace" onPress={onPressBack} />
+    )}
     <Appbar.Content
       title={title}
       titleStyle={globalStyles.headerTitle}
@@ -16,7 +19,12 @@ const HeaderBar = ({ title }) => (
 )
 
 HeaderBar.propTypes = {
+  onPressBack: PropTypes.func,
   title: PropTypes.string.isRequired
+}
+
+HeaderBar.defaultProps = {
+  onPressBack: null
 }
 
 export default HeaderBar

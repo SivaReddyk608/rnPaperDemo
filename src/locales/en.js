@@ -22,6 +22,10 @@ export default {
     },
     account: {
       header_title: 'Account'
+    },
+    barcode_scan: {
+      header_title: 'Scan',
+      scan_info: 'To scan, just center a barcode between the brakets & hold still'
     }
   }
 }

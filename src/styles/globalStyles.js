@@ -13,6 +13,9 @@ const globalStyles = StyleSheet.create({
   headerTitle: {
     textTransform: 'uppercase'
   },
+  justifyCenter: {
+    justifyContent: 'center'
+  },
   screenContainer: {
     backgroundColor: theme.colors.light,
     flex: 1
