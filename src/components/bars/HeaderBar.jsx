@@ -1,6 +1,6 @@
-import { Appbar } from 'react-native-paper'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Appbar } from 'react-native-paper'
 
 import globalStyles from '../../styles/globalStyles'
 

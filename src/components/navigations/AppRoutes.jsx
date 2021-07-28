@@ -1,8 +1,8 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import MainTabs from './MainTabs'
 import BarcodeScanScreen from '../screens/BarcodeScanScreen'
+import MainTabs from './MainTabs'
 
 const AppStack = createStackNavigator()
 
