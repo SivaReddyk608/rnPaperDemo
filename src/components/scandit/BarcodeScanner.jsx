@@ -197,6 +197,7 @@ const BarcodeScanner = React.memo(
         <DataCaptureView
           {...dataCaptureViewProps}
           context={scanditContext}
+          // eslint-disable-next-line no-return-assign
           ref={(ref) => (scannerRef.current = ref)}
         />
         <View style={BarcodeScannerStyles.cameraOverlay}>
