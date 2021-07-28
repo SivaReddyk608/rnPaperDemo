@@ -3,8 +3,9 @@
 1. Clone the repo
 2. Change directory int the project
 3. run `npm i`
-4. run `cd ios && pod install && cd -`
-5. run `react-native run-ios` or `react-native run-android`
+4. Copy and modify the .env file: `cp .env.example .env`
+5. run `cd ios && pod install && cd -`
+6. run `react-native run-ios` or `react-native run-android`
 
 # If you don't have React native Environment setup
 1.check documentation

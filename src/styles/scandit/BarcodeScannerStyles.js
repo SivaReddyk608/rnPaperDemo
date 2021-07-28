@@ -58,6 +58,6 @@ export default StyleSheet.create({
   },
   scannerHint: {
     backgroundColor: theme.colors.overlay,
-    margin: 16
+    padding: 16
   }
 })

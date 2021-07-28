@@ -1,18 +1,16 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react'
-import { AppState, Vibration, View } from 'react-native'
 import Config from 'react-native-config'
-import RnBeep from 'react-native-a-beep'
 import KeepAwake from '@sayem314/react-native-keep-awake'
+import React from 'react'
+import RnBeep from 'react-native-a-beep'
+import { AppState, Vibration, View } from 'react-native'
 import { noop } from 'lodash-es'
-
 import {
   BarcodeCapture,
   BarcodeCaptureFeedback,
   BarcodeCaptureSettings,
   Symbology
 } from 'scandit-react-native-datacapture-barcode'
-
 import {
   Camera,
   DataCaptureContext,
@@ -26,10 +24,8 @@ import {
   SizeWithUnit
 } from 'scandit-react-native-datacapture-core'
 
-import Text from '../typography/Text'
-
 import BarcodeScannerStyles from '../../styles/scandit/BarcodeScannerStyles'
-
+import Text from '../typography/Text'
 import { debounceEvent } from '../../lib/debounce'
 
 const VIBRATE_TIME = 1000
@@ -197,6 +193,7 @@ const BarcodeScanner = React.memo(
         <DataCaptureView
           {...dataCaptureViewProps}
           context={scanditContext}
+          // eslint-disable-next-line no-return-assign
           ref={(ref) => (scannerRef.current = ref)}
         />
         <View style={BarcodeScannerStyles.cameraOverlay}>

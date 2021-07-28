@@ -19,6 +19,7 @@ const BarcodeScanScreen = ({ navigation }) => {
   return (
     <BarcodeScanner
       scannerInfo={I18n.t('screens.barcode_scan.scan_info')}
+      // eslint-disable-next-line no-console
       onBarcodeDetected={(item) => console.warn({ item })}
     />
   )

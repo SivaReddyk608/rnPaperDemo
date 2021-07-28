@@ -3,6 +3,6 @@ export default {
     dark: '#000000',
     light: '#ffffff',
     grey: '#eeeeee',
-    overlay: '#00000102'
+    overlay: '#000001c2'
   }
 }
